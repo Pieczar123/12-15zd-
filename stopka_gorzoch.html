@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>stopka</title>
+    <script>
+        window.onload = function() {
+            if (localStorage.getItem('visitCount')) {
+                var count = parseInt(localStorage.getItem('visitCount')) + 1;
+                localStorage.setItem('visitCount', count);
+            } else {
+                localStorage.setItem('visitCount', 0);
+            }
+    
+            updateCounter();
+        };
+        function updateCounter() {
+            var count = localStorage.getItem('visitCount');
+            document.getElementById('counter').innerHTML = 'Liczba odwiedzeń: ' + count;
+        }
+    </script>
 </head>
 <body>
-<p align="center"><b>Stopka-Gorzoch</b> </p>
-<p align="center">Dzisiejsza data sprawdzania- 1.16.2025</p>
-
+    <p align="center"><b>Stopka-Gorzoch</b></p>
+    <p align="center">Dzisiejsza data sprawdzania - 1.16.2025 | <span id="counter">Ładowanie licznika...</span></p>
 </body>
 </html>
