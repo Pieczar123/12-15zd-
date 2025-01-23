@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body bgcolor="gray">
+<table width=65% border="1" align="center">
+    <tr>
+        <td colspan="3" align="center">
+            <iframe width=625 height=350 name="logo_Igor_Gorzoch" src="logo_gorzoch12.png" border="0"></iframe>
+
+        </td>
+    </tr>
+
+
+    <tr>
+        <td width=18% align="center">
+            <b>Lewe menu</b>
+            <script>
+                window.onload = function() {
+                    if (localStorage.getItem('visitCount')) {
+                        var count = parseInt(localStorage.getItem('visitCount')) + 1;
+                        localStorage.setItem('visitCount', count);
+                    } else {
+                        localStorage.setItem('visitCount', 24);
+                    }
+            
+                    updateCounter();
+                };
+                function updateCounter() {
+                    var count = localStorage.getItem('visitCount');
+                    document.getElementById('counter').innerHTML = 'Liczba odwiedzeń: ' + count;
+                }
+            </script>
+            <ul>
+                <li>  <a href="start.html" target="glowny_gorzoch">Powrót </a></li>
+                <li><a href="https://zse.edu.gdansk.pl/pl" target="glowny_gorzoch">Strona ZSE</a></li>
+                <li><a href="https://www.kuratorium.gda.pl/" target="glowny_gorzoch">Kuratorium</a></li>
+                <li><a href="https://www.flashscore.pl/h2h/pilka-nozna/real-madryt-W8mj7MDD/barcelona-SKbpVP5K/#/overall" target="glowny_gorzoch">Strona flascore</a></li>
+                <li><a href="https://refrag.gg/pl/" target="glowny_gorzoch">Stona refrag</a></li>
+            </ul>
+        </td>
+
+
+        <td align=center>
+            <iframe width=650 height=420 name="glowny_gorzoch" src="start.html" border="0"></iframe>
+            <b></b>
+        </td>
+
+
+        <td width=18% align="center">
+            <b>Prawe menu</b>
+            <ul>
+                <li>
+                    <a href="plik.html" target="glowny_gorzoch"> <img src="prostakat_niebieski.png.png" height="125" width="167"/></a>
+
+                </li>
+                <li>
+                    <a href="tabela.html" target="glowny_gorzoch"><img src="trujkat.png.png"height="125" width="204"/> </a>
+                </li>
+                <li>
+                    <a href="formularz.html" target="glowny_gorzoch"> <img src="okrag_zolty.png.png" height="125" width="121"/></a>
+                </li>
+                <li>
+                    <a href="poczta.html" target="glowny_gorzoch"> <img src="prost.zielony.png.png" height="125" width="261"/></a>
+                </li>
+                <li>
+                    <a href="https://pieczar123.github.io/IGOR1ZD/index%20kolejna%20czesc.html" target="glowny_gorzoch"> <img src="okrag111_brazowy.png" height="125" width="121"/></a>
+                </li>
+            </ul>
+        </td>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td colspan="3" align="center">
+            <iframe scrolling="no" width=900 height=90 name="obszar_stopka" src="stopka_gorzoch.html" border="0"></iframe>
+
+
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>
